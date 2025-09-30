@@ -104,7 +104,6 @@ router.get('/tree/:rootCode?', async (req, res) => {
     
     // 3. Calcola i directCompanies e restituisce l'albero con i conteggi
     const treeWithDirectCounts = await ATECOService.calculateCompanyCounts(allCodes, tree);
-    console.log('Tree with direct counts:', treeWithDirectCounts);S
 
 
     // 4. Calcola i totalCompanies basandosi sui directCompanies
