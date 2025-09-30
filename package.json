@@ -1,0 +1,19 @@
+{
+  "name": "italian-economy-map",
+  "version": "1.0.0",
+  "description": "Interactive map for exploring Italian economy from ATECO sections to individual companies",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "cd client && npm start",
+    "server": "cd server && npm run dev",
+    "build": "cd client && npm run build",
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install"
+  },
+  "keywords": ["italy", "economy", "ateco", "companies", "map", "open-data"],
+  "author": "Italian Economy Map Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
